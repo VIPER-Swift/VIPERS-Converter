@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'VIPERS-Converter_Example', :exclusive => true do
+  pod 'VIPERS-Converter', :path => '../'
+end
+
+target 'VIPERS-Converter_Tests', :exclusive => true do
+  pod 'VIPERS-Converter', :path => '../'
+
+  
+end

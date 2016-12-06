@@ -1,0 +1,14 @@
+PODS:
+  - VIPERS-Converter (0.1.0)
+
+DEPENDENCIES:
+  - VIPERS-Converter (from `../`)
+
+EXTERNAL SOURCES:
+  VIPERS-Converter:
+    :path: ../
+
+SPEC CHECKSUMS:
+  VIPERS-Converter: 156d547fc48276e045bcce14186ce1b0d0463114
+
+COCOAPODS: 0.39.0

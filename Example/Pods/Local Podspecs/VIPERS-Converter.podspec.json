@@ -1,0 +1,24 @@
+{
+  "name": "VIPERS-Converter",
+  "version": "0.1.0",
+  "summary": "A short description of VIPERS-Converter.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/VIPERS-Converter",
+  "license": "MIT",
+  "authors": {
+    "Jan Bartel": "barteljan@yahoo.de"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/VIPERS-Converter.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "VIPERS-Converter/Classes/**/*",
+  "resource_bundles": {
+    "VIPERS-Converter": [
+      "VIPERS-Converter/Assets/*.png"
+    ]
+  }
+}
