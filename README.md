@@ -16,9 +16,9 @@ A general converter implements the ConverterProtocol
 ```swift
 
 public protocol ConverterProtocol{
-func isResponibleForOutputType<T>(_ type:T.Type) -> Bool
-func isResponsible(_ input:Any) throws -> Bool
-func convert(_ input: Any) throws -> Any
+  func isResponibleForOutputType<T>(_ type:T.Type) -> Bool
+  func isResponsible(_ input:Any) throws -> Bool
+  func convert(_ input: Any) throws -> Any
 }
 
 ```
@@ -28,14 +28,14 @@ There is also a dereived protocol for a converter for specific in and output typ
 ```swift
 public protocol TypedConverterProtocol : ConverterProtocol{
 
-associatedtype ConverterOutputType
-associatedtype ConverterInputType
+   associatedtype ConverterOutputType
+   associatedtype ConverterInputType
 
-func isResponibleForOutputType<T>(_ type:T.Type) -> Bool
+   func isResponibleForOutputType<T>(_ type:T.Type) -> Bool
 
-func isResponsible(_ input:ConverterInputType) throws -> Bool
+   func isResponsible(_ input:ConverterInputType) throws -> Bool
 
-func convert(_ input: ConverterInputType) throws -> ConverterOutputType
+   func convert(_ input: ConverterInputType) throws -> ConverterOutputType
 }
 
 ```
@@ -45,17 +45,17 @@ A simple implementation of a TypedConverter is shown below:
 
 class DateToStringConverter : TypedConverterProtocol{
 
-typealias ConverterOutputType = String
-typealias ConverterInputType = Date
+   typealias ConverterOutputType = String
+   typealias ConverterInputType = Date
 
-func isResponsible(_ input:Date) throws -> Bool{
-return true
-}
+   func isResponsible(_ input:Date) throws -> Bool{
+      return true
+   }
 
-func convert(_ input: Date) throws -> String{
-let formatter = DateFormatter()
-return formatter.string(from: input)
-}
+   func convert(_ input: Date) throws -> String{
+      let formatter = DateFormatter()
+      return formatter.string(from: input)
+   }
 }
 
 ```
