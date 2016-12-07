@@ -1,11 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'VIPERS-Converter_Example', :exclusive => true do
+target 'VIPERS-Converter_Example' do
   pod 'VIPERS-Converter', :path => '../'
+  #pod 'VIPERS-Converter-Protocol', :path => '../../VIPERS-Converter-Protocol'
 end
 
-target 'VIPERS-Converter_Tests', :exclusive => true do
+target 'VIPERS-Converter_Tests' do
   pod 'VIPERS-Converter', :path => '../'
-
-  
+  #pod 'VIPERS-Converter-Protocol', :path => '../../VIPERS-Converter-Protocol'
 end

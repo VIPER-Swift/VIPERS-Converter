@@ -1,14 +1,22 @@
 PODS:
-  - VIPERS-Converter (0.1.0)
+  - VIPERS-Converter (0.1.0):
+    - VIPERS-Converter-Protocol
+  - VIPERS-Converter-Protocol (0.1.0)
 
 DEPENDENCIES:
   - VIPERS-Converter (from `../`)
+  - VIPERS-Converter-Protocol (from `../../VIPERS-Converter-Protocol`)
 
 EXTERNAL SOURCES:
   VIPERS-Converter:
-    :path: ../
+    :path: "../"
+  VIPERS-Converter-Protocol:
+    :path: "../../VIPERS-Converter-Protocol"
 
 SPEC CHECKSUMS:
-  VIPERS-Converter: 156d547fc48276e045bcce14186ce1b0d0463114
+  VIPERS-Converter: 006a908b8f9b19a007032e967e857c66c4787c23
+  VIPERS-Converter-Protocol: 1dfd4f62952e487187b9b7b805ac5eff6a06758e
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 0663777d8dd8d32d1bb23ef168d25eedbee50be5
+
+COCOAPODS: 1.1.0.rc.2
